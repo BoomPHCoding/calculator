@@ -1,3 +1,1 @@
-Hello
-wassup - joash
-jai loves wsl
+A simple python calculator for Sean Teo Wei Ren.
