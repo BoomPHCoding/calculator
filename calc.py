@@ -39,7 +39,9 @@ while True:
     print('[3] Multiplication')
     print('[4] Division')
     oper = int(input(fg.yellow + "\nEnter the number of your choice : " + fg.rs))
-
+    if oper < 1 or oper > 4:
+        print(fg.red + "Error: Choice must be from 1 to 4." + fg.rs)
+        continue
     no1 = int(input(fg.li_green + "\nEnter the first number: "))
     no2 = int(input(fg.da_green +"Enter the second number: "))
 
@@ -50,4 +52,7 @@ while True:
     elif oper == 3:
         print(fg.magenta + "\nThe solution is " + fg.green + calc.multiply(no1,no2) + fg.rs)
     else:
+        if no1 == 0 or no2 == 0:
+            print(fg.red + "Error: Division of zero is not allowed" + fg.rs)
+            continue
         print(fg.magenta + "\nThe solution is " + fg.green + calc.divide(no1,no2) + fg.rs)
