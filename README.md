@@ -1,2 +1,1 @@
-Hello
-wassup - joash
+A simple python calculator for Sean Teo Wei Ren.
